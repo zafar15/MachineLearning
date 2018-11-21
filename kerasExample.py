@@ -1,3 +1,4 @@
+import keras
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.datasets import boston_housing
@@ -23,6 +24,6 @@ model.summary()
 model.evaluate(X_test, Y_test, verbose=True)
 Y_pred = model.predict(X_test)
  
-print Y_test[:5]
-print Y_pred[:5,0]
+print (Y_test[:5])
+print (Y_pred[:5,0])
 

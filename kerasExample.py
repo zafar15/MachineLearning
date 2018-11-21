@@ -13,11 +13,8 @@ nFeatures = X_train.shape[1]
  
 model = Sequential()
 model.add(Dense(1, input_shape=(nFeatures,), activation='linear'))
- 
 model.compile(optimizer='rmsprop', loss='mse', metrics=['mse', 'mae'])
- 
 model.fit(X_train, Y_train, batch_size=4, epochs=1000)
- 
 model.summary()
 
 # Testing 

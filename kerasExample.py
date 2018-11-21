@@ -18,3 +18,11 @@ model.compile(optimizer='rmsprop', loss='mse', metrics=['mse', 'mae'])
 model.fit(X_train, Y_train, batch_size=4, epochs=1000)
  
 model.summary()
+
+# Testing 
+model.evaluate(X_test, Y_test, verbose=True)
+Y_pred = model.predict(X_test)
+ 
+print Y_test[:5]
+print Y_pred[:5,0]
+

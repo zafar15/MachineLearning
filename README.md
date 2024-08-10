@@ -8,3 +8,4 @@ Keras is a high-level API that uses deep learning libraries like Theano or Tenso
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 ``` 
+Improve the machine learing code
